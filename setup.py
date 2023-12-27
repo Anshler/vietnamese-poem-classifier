@@ -16,7 +16,7 @@ setup(
         "Programming Language :: Python :: 3.11"
     ],
     keywords="poem",
-    py_modules=['vietnamese_poem_classifier'],
+    packages=find_packages(),
     install_requires=[
         "transformers",
         "importlib",
