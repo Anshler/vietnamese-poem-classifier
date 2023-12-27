@@ -29,7 +29,7 @@ python poem_classifier_training.py
 ```
 pip install vietnamese-poem-classifier
 ```
-or
+Or
 
 ```
 pip install git+https://github.com/Anshler/vietnamese-poem-classifier
