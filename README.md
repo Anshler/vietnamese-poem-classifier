@@ -27,11 +27,12 @@ python poem_classifier_training.py
 ## Installation
 
 ```
-pip install git+https://github.com/Anshler/vietnamese-poem-classifier
+pip install vietnamese-poem-classifier
 ```
 or
+
 ```
-pip install vietnamese-poem-classifier
+pip install git+https://github.com/Anshler/vietnamese-poem-classifier
 ```
 
 ## Inference
