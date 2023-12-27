@@ -7,6 +7,7 @@ setup(
     url="https://github.com/Anshler/vietnamese-poem-classifier",
     author="Huynh Minh Triet",
     author_email="huynhminhtriet2002@gmail.com",
+    license='MIT',
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7"
