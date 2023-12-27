@@ -17,7 +17,7 @@ setup(
     ],
     keywords="poem",
     packages=find_packages(),
-    package_data={'vietnamese_poem_classifier': ['rhymes.txt','start_vowels.txt']}.
+    package_data={'vietnamese_poem_classifier': ['rhymes.txt','start_vowels.txt']},
     install_requires=[
         "transformers",
         "importlib",
