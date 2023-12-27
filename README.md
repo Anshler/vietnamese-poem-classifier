@@ -17,7 +17,7 @@ For more detail, refer to the _Acknowledgments_ section
 
 ## Training
 
-Training code in our repo [Vietnamese poem generator](https://github.com/Anshler/poem_generator)
+Training code is in our repo [Vietnamese poem generator](https://github.com/Anshler/poem_generator)
 Run:
 ```
 python poem_classifier_training.py
