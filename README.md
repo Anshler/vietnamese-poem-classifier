@@ -1,4 +1,4 @@
-# Vietnamese poem classifier and evaluator
+# Vietnamese poem classifier and evaluator 📜🔍
 
 A Vietnamese poem classifer using [BertForSequenceClassification](https://huggingface.co/trituenhantaoio/bert-base-vietnamese-uncased) with the accuracy of ```99.7%```
 
