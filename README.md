@@ -54,7 +54,7 @@ classifier.predict(poem)
 
 ## Model
 
-The weights of our model can be downloaded from Huggingface at [Anshler/vietnamese-poem-classifier](https://huggingface.co/Anshler/vietnamese-poem-classifier) 
+The model's weights are published at Huggingface [Anshler/vietnamese-poem-classifier](https://huggingface.co/Anshler/vietnamese-poem-classifier) 
 
 ## Acknowledgments
 
