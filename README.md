@@ -48,11 +48,10 @@ poem = '''Người đi theo gió đuổi mây
           Bần thần tôi ngẫm triền miên thói đời.'''
 
 classifier.predict(poem)
+
+#>> [{'label': 'luc bat', 'confidence': 0.9999017715454102, 'poem_score': 0.75}]
 ```
 
-```
->> [{'label': 'luc bat', 'confidence': 0.9999017715454102, 'poem_score': 0.75}]
-```
 ## Model
 
 The weights of our model can be downloaded from Huggingface at [Anshler/vietnamese-poem-classifier](https://huggingface.co/Anshler/vietnamese-poem-classifier) 
