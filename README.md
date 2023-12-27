@@ -27,7 +27,7 @@ python poem_classifier_training.py
 ## Installation
 
 ```
-pip install -q -U git+https://github.com/Anshler/vietnamese-poem-classifier
+pip install git+https://github.com/Anshler/vietnamese-poem-classifier
 ```
 or
 ```
