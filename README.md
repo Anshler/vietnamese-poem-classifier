@@ -1,6 +1,6 @@
 # Vietnamese poem classifier and evaluator
 
-A Vietnamese poem classifer using [BertForSequenceClassification](https://huggingface.co/trituenhantaoio/bert-base-vietnamese-uncased)
+A Vietnamese poem classifer using [BertForSequenceClassification](https://huggingface.co/trituenhantaoio/bert-base-vietnamese-uncased) with the accuracy of ```99.7%```
 
 This is a side project during the making of our [Vietnamese poem generator](https://github.com/Anshler/poem_generator)
 
