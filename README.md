@@ -11,13 +11,13 @@ This is a side project during the making of our [Vietnamese poem generator](http
 
 The rules for each genre are as followed:
 
-| Genre | Rule |
-|------------------|------------------|
-| 4 chu    | - Length: 4 words per line, 4 lines per stanza (optional) <br>- Tone: for each line, if the 2nd word is uneven (trắc), the 4th word is even (bằng), and vice versa <br>- Rhyme: divided into continuous rhyme (gieo vần tiếp), alternating rhyme (gieo vần tréo) and three-line rhyme (gieo vần ba) for the last word (4th) of each line|
-| 5 chu    | - Length: 5 words per line, 4 lines per stanza (optional)  <br>- Tone and Rhyme: same as "4 chu" |
-| 7 chu    | - Length: 7 words per line, 4 lines per stanza (optional) <br>- Tone: for each line, if the 2nd word is uneven (trắc), the 4th word is even (bằng), the 6th word is uneven (trắc), and vice versa. 5th word and last word (7th) must have different tone <br>- Rhyme: the last word of 1st, 2nd, 4th line per stanza must have same tone and rhyme |
-| luc bat    | - Length: 6 words in odd line, 8 words in even line, 4 lines per stanza (optional) <br>- Tone: for 6-word line, if the 2nd word is uneven (trắc) the 4th word is even (bằng), the 6th word is uneven (trắc), the following 8-word line must be the same, the last word (8th) mut have same tone as 6th word <br>- Rhyme: the last word (6th) in 6-word line must rhyme with the 6th word in the next 8-word line, as well as the 8th word in the previous 8-word line |
-| 8 chu    | - Length: 8 words per line, 4 lines per stanza (optional) <br>- Tone: for each line, if the 3rd word is uneven (trắc), the 5th word is even (bằng), the 8th word is uneven (trắc), and vice versa <br>- Rhyme: same as "4 chu" |
+| Genre | Length | Tone | Rhyme |
+|------------------|------------------|--------------|------------------------|
+| 4 chu    | - 4 words per line <br>- 4 lines per stanza (optional) | For each line: <br>- If the 2nd word is uneven (trắc), the 4th word is even (bằng) <br>- Vice versa | Last word (4th) of each line: <br>- Continuous rhyme (gieo vần tiếp) <br>- Alternating rhyme (gieo vần tréo) <br>- Three-line rhyme (gieo vần ba)|
+| 5 chu    | - 5 words per line <br>- 4 lines per stanza (optional)  | Same as "4 chu" | Same as "4 chu" |
+| 7 chu    | - 7 words per line <br>- 4 lines per stanza (optional) | For each line: <br>- If the 2nd word is uneven (trắc), the 4th word is even (bằng), the 6th word is uneven (trắc) <br>- Vice versa <br> - 5th word and last word (7th) must have different tone | The last word of 1st, 2nd, 4th line per stanza must have same tone and rhyme |
+| luc bat    | - 6 words in odd line <br>- 8 words in even line <br>- 4 lines per stanza (optional) | For 6-word line: <br>- If the 2nd word is uneven (trắc) the 4th word is even (bằng), the 6th word is uneven (trắc) <br>- Vice versa <br>- The following 8-word line must be the same as 6-word line, the last word (8th) mut have same tone as 6th word | The last word (6th) in 6-word line must rhyme with the 6th word in the next 8-word line, as well as the 8th word in the previous 8-word line |
+| 8 chu    | - 8 words per line <br>- 4 lines per stanza (optional) | For each line: <br>- If the 3rd word is uneven (trắc), the 5th word is even (bằng), the 8th word is uneven (trắc) <br>- Vice versa | Same as "4 chu" |
 
 
 
