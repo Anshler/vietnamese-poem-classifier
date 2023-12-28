@@ -9,7 +9,7 @@ This is a side project during the making of our [Vietnamese poem generator](http
 * Classify Vietnamese poem into categories of ```4 chu```, ```5 chu```, ```7 chu```, ```luc bat``` and ```8 chu```
 * Score the quality of each poem, based soldly on its conformation to the rigid rule of various types of Vietnamese poem. Using 3 criterias: Length, Tone and Rhyme as follow: ```score = L/10 + 3T/10 + 6R/10```
 
-The rules for each genre are as followed:
+The rules for each genre are defined below:
 
 | Genre | Length | Tone | Rhyme |
 |------------------|------------------|--------------|------------------------|
