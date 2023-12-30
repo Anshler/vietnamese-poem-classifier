@@ -792,6 +792,9 @@ def calculate_score(poem: str, genre: str):
     try:
         poem = preprocess_linebreaks(poem)
         sum_ = 0
+        sum_l = 0
+        sum_t = 0
+        sum_r = 0
         count = 0
         for i in poem.split("\n\n"):
             if genre == '4 chu' or genre == '5 chu':
@@ -800,16 +803,24 @@ def calculate_score(poem: str, genre: str):
                     # Every stanza is 4-line
                     stanza = preprocess_stanza('\n'.join(i[n:n + 4]))
                     count += 1
-                    sum_ = sum_ + score_sum(stanza, genre)
+                    score_sums = score_sum(stanza, genre)
+                    sum_ = sum_ + score_sums[0]
+                    sum_l = sum_l + score_sums[1]
+                    sum_t = sum_t + score_sums[2]
+                    sum_r = sum_r + score_sums[3]
             else:
                 stanza = preprocess_stanza(i)
                 count += 1
-                sum_ = sum_ + score_sum(stanza, genre)
+                score_sums = score_sum(stanza, genre)
+                sum_ = sum_ + score_sums[0]
+                sum_l = sum_l + score_sums[1]
+                sum_t = sum_t + score_sums[2]
+                sum_r = sum_r + score_sums[3]
 
         #print(sum_/count)
     except:
-        return 0,''
-    return sum_/count, genre
+        return 0,0,0,0
+    return sum_/count, sum_l/count, sum_t/count, sum_r/count
 
 class PoemClassifier:
     def __init__(self):
@@ -826,5 +837,4 @@ class PoemClassifier:
         poem_processed = poem.apply(lambda x: self.__count_per_lines(x)) # convert to word count format like: "[6,8,6,8,6,8]"
         poem = list(poem)
         result = self.__classifier(list(poem_processed))
-        return [{'label': result[i]['label'], 'confidence': result[i]['score'], 'poem_score': calculate_score(poem[i], result[i]['label'])[0]} for i in range(len(result))]
-
+        return [{'label': result[i]['label'], 'confidence': result[i]['score']} | dict(zip(['poem_score','l_score','t_score','r_score'], calculate_score(poem[i], result[i]['label']))) for i in range(len(result))]
