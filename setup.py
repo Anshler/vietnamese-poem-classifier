@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name="vietnamese-poem-classifier",
-    version="0.1.2",
+    version="0.1.3",
     description="Classify genre and score Vietnamese poems",
     url="https://github.com/Anshler/vietnamese-poem-classifier",
     author="Huynh Minh Triet",
