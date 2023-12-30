@@ -24,7 +24,7 @@ The rules for each genre are defined below:
 
 ## Data
 
-A colelction of 171188 Vietnamese poems with different genres: luc-bat, 5-chu, 7-chu, 8-chu, 4-chu. Download [here](https://github.com/fsoft-ailab/Poem-Generator/raw/master/dataset/poems_dataset.zip)
+A collection of 171188 Vietnamese poems with different genres: luc-bat, 5-chu, 7-chu, 8-chu, 4-chu. Download [here](https://github.com/fsoft-ailab/Poem-Generator/raw/master/dataset/poems_dataset.zip)
 
 For more detail, refer to the _Acknowledgments_ section
 
@@ -62,7 +62,7 @@ poem = '''Người đi theo gió đuổi mây
 
 classifier.predict(poem)
 
-#>> [{'label': 'luc bat', 'confidence': 0.9999017715454102, 'poem_score': 0.75}]
+#>> [{'label': 'luc bat', 'confidence': 0.9999017715454102, 'poem_score': 0, 'l_score': 0, 't_score': 0, 'r_score': 0}]
 ```
 
 ## Model
