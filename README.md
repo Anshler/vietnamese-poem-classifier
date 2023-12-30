@@ -71,6 +71,6 @@ The model's weights are published at Huggingface [Anshler/vietnamese-poem-classi
 
 ## Acknowledgments
 
-_This project was inspired by the evaluation method from ```fsoft-ailab```_'s_ [SP-GPT2 Poem-Generator](https://github.com/fsoft-ailab/Poem-Generator)
+_This project was inspired by the evaluation method from ```fsoft-ailab```'s_ [SP-GPT2 Poem-Generator](https://github.com/fsoft-ailab/Poem-Generator)
 
 _Dataset also taken from their repo_
