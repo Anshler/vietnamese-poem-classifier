@@ -62,7 +62,7 @@ poem = '''Người đi theo gió đuổi mây
 
 classifier.predict(poem)
 
-#>> [{'label': 'luc bat', 'confidence': 0.9999017715454102, 'poem_score': 0, 'l_score': 0, 't_score': 0, 'r_score': 0}]
+#>> [{'label': 'luc bat', 'confidence': 0.9999017715454102, 'poem_score': 0.75, 'l_score': 1.0, 't_score': 1.0, 'r_score': 0.5833333333333333}]
 ```
 
 ## Model
