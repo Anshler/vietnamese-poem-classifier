@@ -779,7 +779,7 @@ def calculate_stanza_score(stanza: str, genre: str):
 # determine percentage
 def score_sum(stanza: str, genre: str):
     len_score, tone_score, rhyme_score = calculate_stanza_score(stanza, genre)
-    return len_score*0.1 + tone_score*0.3 + rhyme_score*0.6
+    return len_score*0.1 + tone_score*0.3 + rhyme_score*0.6, len_score, tone_score, rhyme_score
 
 # ---THE MAIN FUNCTION---
 def calculate_score(poem: str, genre: str):
