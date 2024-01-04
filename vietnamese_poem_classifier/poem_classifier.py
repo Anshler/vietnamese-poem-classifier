@@ -828,7 +828,7 @@ class PoemClassifier:
     def __count_per_lines(self, text):
         text = text.split('\n')
         return str([len(x.split()) for x in text])
-    def predict(self,poem):
+    def predict(self,poem, forced_genre=''):
         if type(poem) is not list and type(poem) is not pd.Series and type(poem) is not str:
             raise TypeError('Must be either str, list[str] or Series(Panda)')
         if type(poem) is str:
@@ -837,4 +837,4 @@ class PoemClassifier:
         poem_processed = poem.apply(lambda x: self.__count_per_lines(x)) # convert to word count format like: "[6,8,6,8,6,8]"
         poem = list(poem)
         result = self.__classifier(list(poem_processed))
-        return [{'label': result[i]['label'], 'confidence': result[i]['score']} | dict(zip(['poem_score','l_score','t_score','r_score'], calculate_score(poem[i], result[i]['label']))) for i in range(len(result))]
+        return [{'label': result[i]['label'] if forced_genre == '' else forced_genre, 'confidence': result[i]['score'] if forced_genre == '' else -1} | dict(zip(['poem_score','l_score','t_score','r_score'], calculate_score(poem[i], result[i]['label'] if forced_genre == '' else forced_genre))) for i in range(len(result))]
